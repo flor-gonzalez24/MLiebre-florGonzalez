@@ -21,10 +21,14 @@ app.get('/register', (req, res) => {
 
 app.post('/submit-form', (req, res) => {
     res.redirect('/');
-  });
+ });
 
+let port = 3030 || process.env.PORT;
 
-app.listen(3030, () => 
-    console.log("Servidor corriendo"))
+app.listen(port, () => 
+console.log("Servidor corriendo" + port))
+
+//app.listen(3030, () => 
+    //console.log("Servidor corriendo"))
     
     
